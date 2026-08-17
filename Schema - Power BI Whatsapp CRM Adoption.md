@@ -2,6 +2,8 @@
 
 Type: semantic schema
 
+Layer: Base
+
 Confidence: Trusted for documented model structure.
 
 ## Core Semantic Tables And Relationships
@@ -13,6 +15,8 @@ Confidence: Trusted for documented model structure.
 
 ## Connected Knowledge
 
-- [[Dashboard - Whatsapp CRM Adoption]]
-- [[Metrics - Power BI Semantic Metrics]]
-- [[Analysis - Whatsapp CRM Adoption Semantic Model]]
+- Metrics: [[Metrics - Power BI Semantic Metrics]], [[01_Metrics_Index]]
+- Dashboard: [[Dashboard - Whatsapp CRM Adoption]]
+- Analysis: [[Analysis - Whatsapp CRM Adoption Semantic Model]]
+
+Graph model: [[Lineage - Four Layer Model]].

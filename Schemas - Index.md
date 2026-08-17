@@ -2,6 +2,10 @@
 
 Type: schema hub
 
+Layer: Base
+
+Navigation: [[Lineage - Four Layer Model]] → [[02_Table_Repository]] → [[01_Metrics_Index]]
+
 ## Schemas
 
 - [[Schema - CFSPL_NBFC_DB.PROD]]

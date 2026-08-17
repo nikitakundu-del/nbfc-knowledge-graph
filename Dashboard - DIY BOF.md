@@ -2,6 +2,8 @@
 
 Confidence: Trusted for documented semantic-model measures and relationships.
 
+Layer: Dashboard
+
 ## Semantic Model
 
 - Power BI workspace: `NBFC -Product`
@@ -26,6 +28,9 @@ Confidence: Trusted for documented semantic-model measures and relationships.
 
 ## Connected Knowledge
 
+- Base/semantic schema: [[Schema - Power BI DIY BOF]]
 - Metrics: [[Metrics - Power BI Semantic Metrics]] and [[01_Metrics_Index]]
-- Semantic schema: [[Schema - Power BI DIY BOF]]
+- Dashboard: this note
 - Analysis: [[Analysis - BOF GA Funnel Semantic Model]]
+
+Graph model: [[Lineage - Four Layer Model]].

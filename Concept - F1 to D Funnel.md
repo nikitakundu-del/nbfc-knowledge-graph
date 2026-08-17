@@ -8,7 +8,7 @@ The F1-to-D funnel tracks the customer journey from Form 1 / basic details throu
 
 ## Reference Query
 
-- [[Reference Query - F1 to D ETL Base]]
+- [[Evidence - F1 to D ETL Base]]
 
 ## Dashboard
 
@@ -42,5 +42,5 @@ The F1-to-D funnel tracks the customer journey from Form 1 / basic details throu
 
 ## Confidence
 
-Trusted for metrics explicitly derived from [[Reference Query - F1 to D ETL Base]].
+Trusted for metrics explicitly derived from [[Evidence - F1 to D ETL Base]].
 

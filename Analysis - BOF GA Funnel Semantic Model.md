@@ -2,6 +2,8 @@
 
 Confidence: Trusted.
 
+Layer: Analysis
+
 ## Purpose
 
 Transforms the BOF journey semantic layer into a lead × configured-step funnel with Profile, Verification, and Mandate stages, including friction/rework analysis and application outcomes.
@@ -21,10 +23,12 @@ Confidence: Trusted.
 
 ## Connected Knowledge
 
-- [[Dashboard - DIY BOF]]
-- [[Metrics - Power BI Semantic Metrics]]
-- [[Schema - Power BI DIY BOF]]
-- [[Analysis - FCU Employment Check Logic]]
+- Base/semantic schema: [[Schema - Power BI DIY BOF]]
+- Metrics: [[Metrics - Power BI Semantic Metrics]], [[01_Metrics_Index]]
+- Dashboard: [[Dashboard - DIY BOF]]
+- Related analysis: [[Analysis - FCU Employment Check Logic]]
+
+Graph model: [[Lineage - Four Layer Model]].
 
 ## Source Traceability
 

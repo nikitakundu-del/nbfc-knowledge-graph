@@ -2,6 +2,8 @@
 
 Confidence: Trusted.
 
+Layer: Analysis
+
 ## Purpose
 
 Produces one latest employment-check record per loan and FCU employment-check name, then classifies API-response and review outcomes.
@@ -30,3 +32,12 @@ Produces one latest employment-check record per loan and FCU employment-check na
 
 - Snowflake worksheet query ID: `01c65148-0002-7741-0008-305626e76992`
 - Executed: 2026-08-11T11:52:33Z
+
+## Four-Layer Lineage
+
+- Base: [[Schema - Power BI FCU Checks Automations]], `CFSPL_NBFC_DB.PROD_MONGO_FIN_SAARATHI_BFF_DB.TASK_EXECUTION`, `CFSPL_NBFC_DB.PROD_MONGO_RISK_DB.AUDIT_DETAILS`, and `CFSPL_NBFC_DB.PROD_CARS24_FIN_CUSTOMER_FIN_CUSTOMER_DB.CUSTOMER_FIELD_SOURCE`
+- Metrics: [[Metrics - Power BI Semantic Metrics]], [[01_Metrics_Index]]
+- Dashboard: [[Dashboard - FCU Checks Automations]]
+- Analysis: this note
+
+Graph model: [[Lineage - Four Layer Model]].

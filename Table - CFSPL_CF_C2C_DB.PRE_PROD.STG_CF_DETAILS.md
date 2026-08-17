@@ -40,5 +40,5 @@ Core CFD funnel detail source for F1-to-D flags, channels, status, and timestamp
 
 ## Used By
 
-- [[Reference Query - F1 to D ETL Base]]
+- [[Evidence - F1 to D ETL Base]]
 

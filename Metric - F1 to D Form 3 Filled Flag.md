@@ -19,5 +19,5 @@ Same source-aware rule as [[Metric - F1 to D Form 1 Filled Flag]], using `cfd.fo
 
 ## Used By
 
-- [[Reference Query - F1 to D ETL Base]]
+- [[Evidence - F1 to D ETL Base]]
 

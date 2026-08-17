@@ -2,6 +2,8 @@
 
 Confidence: Trusted for documented semantic-model measures and relationships.
 
+Layer: Dashboard
+
 ## Semantic Model
 
 - Power BI workspace: `NBFC -Product`
@@ -22,6 +24,9 @@ Confidence: Trusted for documented semantic-model measures and relationships.
 
 ## Connected Knowledge
 
+- Base/semantic schema: [[Schema - Power BI Whatsapp CRM Adoption]]
 - Metrics: [[Metrics - Power BI Semantic Metrics]] and [[01_Metrics_Index]]
-- Semantic schema: [[Schema - Power BI Whatsapp CRM Adoption]]
+- Dashboard: this note
 - Analysis: [[Analysis - Whatsapp CRM Adoption Semantic Model]]
+
+Graph model: [[Lineage - Four Layer Model]].

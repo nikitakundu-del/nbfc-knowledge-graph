@@ -2,13 +2,23 @@
 
 Node hub: [[Analyses - Index]]
 
+Analysis notes own recurring reporting and one-time analytical questions, scope, cohorts, periods, methods, conclusions, and limitations. They reference canonical metrics and base objects instead of redefining them.
+
+## Layer Navigation
+
+- Base: [[02_Table_Repository]], [[Schemas - Index]], [[Tables - Index]]
+- Metrics: [[01_Metrics_Index]]
+- Dashboards: [[04_Dashboard_Repository]]
+- This layer: analyses below
+- Model: [[Lineage - Four Layer Model]]
+
 | Analysis | Business Question / Purpose | Confidence | Notes |
 |---|---|---|---|
 | [[Analysis - Agreement Predictor]] | Rolling token-to-agreement and credit approval view. | Trusted for listed flags | SQL explicitly creates temp tables and source logic. |
 | [[Analysis - Marketing Campaign Query]] | Customer/application features for marketing campaign targeting or analysis. | Trusted for listed fields | Source tables and field logic are explicit. |
 | [[Analysis - Marketing Campaign Lookalikes]] | Loan-level customer/funnel extract for campaign lookalike audience building, plus supporting source-check queries. | Trusted for loan-level extract; partial for ad hoc checks | Query was pasted directly in chat and matches the existing marketing campaign extract. |
 | [[Analysis - U2FF Query ETL]] | User-to-Form-Fill funnel ETL across entry points, GA behavior, bookings, and marketing mix. | Trusted for source tables; partial for all derived fields | SQL is explicit, but many funnel fields need business naming review before stakeholder publication. |
-| [[Reference Query - F1 to D ETL Base]] | Reference ETL query used as the F1-to-D dashboard base. | Trusted for listed flags and table lineage | Supplied as a DOCX query artifact; source logic is explicit. |
+| [[Evidence - F1 to D ETL Base]] | Reference ETL query used as the F1-to-D dashboard base. | Trusted for listed flags and table lineage | Supplied as a DOCX query artifact; source logic is explicit. |
 | [[Analysis - Lead Stage Snapshot]] | Daily active lead stage snapshot, especially DS/final offer terms. | Trusted for offer-term lineage | Strong in-query comments document validated appointment linkage. |
 | [[Analysis - NBFC DWH Enrichment Handoff]] | DWH enrichment handoff and validation methodology. | Partial | Excellent system context, but not all generated columns are present as final stakeholder metric definitions. |
 | [[Analysis - Task TAT and Queue]] | Task queue, pickup, hold, and completion TAT. | Partial | Source fields are visible, but formulas should be reviewed by funnel owner before reuse. |

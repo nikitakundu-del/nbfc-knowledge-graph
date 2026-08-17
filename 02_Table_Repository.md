@@ -1,6 +1,15 @@
-# Table Repository
+# Base Layer Repository
 
-Tables are listed when they are explicitly referenced by the provided artifacts.
+Compatibility filename: `02_Table_Repository.md`.
+
+This is the canonical base-layer hub for databases, schemas, tables/views, fields, keys, grain, relationships, and source lineage. Objects are listed only when explicitly supported by source evidence.
+
+## Layer Navigation
+
+- Model: [[Lineage - Four Layer Model]]
+- This layer: [[Schemas - Index]], [[Tables - Index]]
+- Next layer: [[01_Metrics_Index]]
+- Consumers: [[04_Dashboard_Repository]], [[03_Analysis_Repository]]
 
 ## Table Node Hubs
 
@@ -54,7 +63,7 @@ Tables are listed when they are explicitly referenced by the provided artifacts.
 
 ## F1-to-D Dashboard Base Staging Tables
 
-These are used by [[Reference Query - F1 to D ETL Base]], the reference query behind the F1-to-D dashboard base.
+These are used by [[Evidence - F1 to D ETL Base]], the reference query behind the F1-to-D dashboard base.
 
 | Table/View | Observed Use |
 |---|---|

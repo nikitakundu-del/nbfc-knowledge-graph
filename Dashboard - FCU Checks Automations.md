@@ -2,6 +2,8 @@
 
 Confidence: Trusted for documented semantic-model measures and relationships.
 
+Layer: Dashboard
+
 ## Tool
 
 Power BI (`.pbix`).
@@ -38,6 +40,9 @@ The semantic model was read through the Power BI XMLA endpoint on 2026-08-12. Th
 
 ## Connected Knowledge
 
+- Base/semantic schema: [[Schema - Power BI FCU Checks Automations]]
 - Metrics: [[Metrics - Power BI Semantic Metrics]] and [[01_Metrics_Index]]
-- Semantic schema: [[Schema - Power BI FCU Checks Automations]]
+- Dashboard: this note
 - Analysis: [[Analysis - FCU Employment Check Logic]]
+
+Graph model: [[Lineage - Four Layer Model]].

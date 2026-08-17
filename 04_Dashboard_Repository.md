@@ -1,5 +1,15 @@
 # Dashboard Repository
 
+Dashboard notes own consolidated metric selection and reporting format. They reference canonical metric definitions and base/semantic schemas rather than duplicating calculation logic.
+
+## Layer Navigation
+
+- Base: [[02_Table_Repository]], [[Schemas - Index]], [[Tables - Index]]
+- Metrics: [[01_Metrics_Index]]
+- This layer: dashboards below
+- Next layer: [[03_Analysis_Repository]]
+- Model: [[Lineage - Four Layer Model]]
+
 ## Dashboards
 
 | Dashboard | Tool | Confidence | Main Notes |
@@ -13,4 +23,4 @@
 
 | Base Query | Used By | Confidence |
 |---|---|---|
-| [[Reference Query - F1 to D ETL Base]] | F1-to-D dashboards base | Trusted for listed flags and table lineage |
+| [[Evidence - F1 to D ETL Base]] | F1-to-D dashboards base | Trusted for listed flags and table lineage |

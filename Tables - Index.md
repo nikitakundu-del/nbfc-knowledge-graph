@@ -2,6 +2,10 @@
 
 Type: table hub
 
+Layer: Base
+
+Navigation: [[Lineage - Four Layer Model]] → [[02_Table_Repository]] → [[01_Metrics_Index]]
+
 ## Schema Nodes
 
 - [[Schema - CFSPL_NBFC_DB.PROD]]
@@ -39,4 +43,3 @@ Type: table hub
 - [[Table - CFSPL_CF_C2C_DB.PRE_PROD.STG_TOKEN_STATS]]
 - [[Table - CFSPL_CF_C2C_DB.PRE_PROD.AGREEMENT_DETAILS]]
 - [[Table - CFSPL_CF_C2C_DB.PRE_PROD.LEAD_LEVEL_MOST_RELEVANT_BOOKING_AND_ASSET_VW_TEMP_2]]
-
