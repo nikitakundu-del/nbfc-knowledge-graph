@@ -1,0 +1,16 @@
+.snowflake-query-sync-state.json
+.obsidian/
+Reference Query - *.md
+*.sql
+*.dax
+*.pbix
+*.pbit
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.zip
+*.tmp
+*.bak
+*~

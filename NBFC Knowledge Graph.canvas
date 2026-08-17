@@ -1,0 +1,335 @@
+﻿{
+    "nodes":  [
+                  {
+                      "id":  "home",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/00_Home.md",
+                      "x":  0,
+                      "y":  0,
+                      "width":  320,
+                      "height":  180
+                  },
+                  {
+                      "id":  "analysis_hub",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Analyses - Index.md",
+                      "x":  -520,
+                      "y":  -260,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "metrics_hub",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/01_Metrics_Index.md",
+                      "x":  0,
+                      "y":  -320,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "tables_hub",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Tables - Index.md",
+                      "x":  520,
+                      "y":  -260,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "schemas_hub",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Schemas - Index.md",
+                      "x":  920,
+                      "y":  -260,
+                      "width":  340,
+                      "height":  220
+                  },
+                  {
+                      "id":  "concepts",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Concepts - NBFC Product Analytics.md",
+                      "x":  0,
+                      "y":  260,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "relationship_map",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Graph - Relationship Map.md",
+                      "x":  0,
+                      "y":  560,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "mkt_analysis",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Analysis - Marketing Campaign Lookalikes.md",
+                      "x":  -1000,
+                      "y":  -520,
+                      "width":  380,
+                      "height":  220
+                  },
+                  {
+                      "id":  "f1tod_ref",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Reference Query - F1 to D ETL Base.md",
+                      "x":  -1000,
+                      "y":  -180,
+                      "width":  380,
+                      "height":  220
+                  },
+                  {
+                      "id":  "lead_snapshot",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Analysis - Lead Stage Snapshot.md",
+                      "x":  -1000,
+                      "y":  160,
+                      "width":  380,
+                      "height":  220
+                  },
+                  {
+                      "id":  "funnel_metrics",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Metrics - Funnel Outcomes.md",
+                      "x":  -240,
+                      "y":  -680,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "f1tod_metrics",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Metrics - F1 to D Base Flags.md",
+                      "x":  160,
+                      "y":  -680,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "tableau_metrics",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Metrics - Tableau Dashboard Rates.md",
+                      "x":  560,
+                      "y":  -680,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "nbfc_schema",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Schema - CFSPL_NBFC_DB.PROD.md",
+                      "x":  960,
+                      "y":  40,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "c2c_prod_schema",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Schema - CFSPL_CF_C2C_DB.PROD.md",
+                      "x":  960,
+                      "y":  340,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "c2c_preprod_schema",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Schema - CFSPL_CF_C2C_DB.PRE_PROD.md",
+                      "x":  960,
+                      "y":  640,
+                      "width":  360,
+                      "height":  220
+                  },
+                  {
+                      "id":  "app_table",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Table - CFSPL_NBFC_DB.PROD.APPLICATION_DETAILS.md",
+                      "x":  1420,
+                      "y":  -160,
+                      "width":  360,
+                      "height":  200
+                  },
+                  {
+                      "id":  "booking_table",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Table - CFSPL_NBFC_DB.PROD.BOOKING_DETAILS.md",
+                      "x":  1420,
+                      "y":  80,
+                      "width":  360,
+                      "height":  200
+                  },
+                  {
+                      "id":  "f1tod_view",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Table - CFSPL_CF_C2C_DB.PROD.F1_TO_D_DASHBOARD_VW.md",
+                      "x":  1420,
+                      "y":  340,
+                      "width":  360,
+                      "height":  200
+                  },
+                  {
+                      "id":  "stg_cf",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Table - CFSPL_CF_C2C_DB.PRE_PROD.STG_CF_DETAILS.md",
+                      "x":  1420,
+                      "y":  620,
+                      "width":  360,
+                      "height":  200
+                  },
+                  {
+                      "id":  "offer_terms",
+                      "type":  "file",
+                      "file":  "NBFC Knowledge Graph/Concept - Offer Terms.md",
+                      "x":  -520,
+                      "y":  520,
+                      "width":  360,
+                      "height":  220
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "home-analysis",
+                      "fromNode":  "home",
+                      "fromSide":  "left",
+                      "toNode":  "analysis_hub",
+                      "toSide":  "right"
+                  },
+                  {
+                      "id":  "home-metrics",
+                      "fromNode":  "home",
+                      "fromSide":  "top",
+                      "toNode":  "metrics_hub",
+                      "toSide":  "bottom"
+                  },
+                  {
+                      "id":  "home-tables",
+                      "fromNode":  "home",
+                      "fromSide":  "right",
+                      "toNode":  "tables_hub",
+                      "toSide":  "left"
+                  },
+                  {
+                      "id":  "tables-schemas",
+                      "fromNode":  "tables_hub",
+                      "fromSide":  "right",
+                      "toNode":  "schemas_hub",
+                      "toSide":  "left"
+                  },
+                  {
+                      "id":  "home-concepts",
+                      "fromNode":  "home",
+                      "fromSide":  "bottom",
+                      "toNode":  "concepts",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "concepts-map",
+                      "fromNode":  "concepts",
+                      "fromSide":  "bottom",
+                      "toNode":  "relationship_map",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "analysis-mkt",
+                      "fromNode":  "analysis_hub",
+                      "fromSide":  "left",
+                      "toNode":  "mkt_analysis",
+                      "toSide":  "right"
+                  },
+                  {
+                      "id":  "analysis-f1tod",
+                      "fromNode":  "analysis_hub",
+                      "fromSide":  "left",
+                      "toNode":  "f1tod_ref",
+                      "toSide":  "right"
+                  },
+                  {
+                      "id":  "analysis-lead-snapshot",
+                      "fromNode":  "analysis_hub",
+                      "fromSide":  "left",
+                      "toNode":  "lead_snapshot",
+                      "toSide":  "right"
+                  },
+                  {
+                      "id":  "metrics-funnel",
+                      "fromNode":  "metrics_hub",
+                      "fromSide":  "top",
+                      "toNode":  "funnel_metrics",
+                      "toSide":  "bottom"
+                  },
+                  {
+                      "id":  "metrics-f1tod",
+                      "fromNode":  "metrics_hub",
+                      "fromSide":  "top",
+                      "toNode":  "f1tod_metrics",
+                      "toSide":  "bottom"
+                  },
+                  {
+                      "id":  "metrics-tableau",
+                      "fromNode":  "metrics_hub",
+                      "fromSide":  "top",
+                      "toNode":  "tableau_metrics",
+                      "toSide":  "bottom"
+                  },
+                  {
+                      "id":  "schemas-nbfc",
+                      "fromNode":  "schemas_hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "nbfc_schema",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "schemas-c2c-prod",
+                      "fromNode":  "schemas_hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "c2c_prod_schema",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "schemas-c2c-preprod",
+                      "fromNode":  "schemas_hub",
+                      "fromSide":  "bottom",
+                      "toNode":  "c2c_preprod_schema",
+                      "toSide":  "top"
+                  },
+                  {
+                      "id":  "nbfc-app",
+                      "fromNode":  "nbfc_schema",
+                      "fromSide":  "right",
+                      "toNode":  "app_table",
+                      "toSide":  "left"
+                  },
+                  {
+                      "id":  "nbfc-booking",
+                      "fromNode":  "nbfc_schema",
+                      "fromSide":  "right",
+                      "toNode":  "booking_table",
+                      "toSide":  "left"
+                  },
+                  {
+                      "id":  "c2c-f1tod-view",
+                      "fromNode":  "c2c_prod_schema",
+                      "fromSide":  "right",
+                      "toNode":  "f1tod_view",
+                      "toSide":  "left"
+                  },
+                  {
+                      "id":  "preprod-stgcf",
+                      "fromNode":  "c2c_preprod_schema",
+                      "fromSide":  "right",
+                      "toNode":  "stg_cf",
+                      "toSide":  "left"
+                  },
+                  {
+                      "id":  "lead-snapshot-offer",
+                      "fromNode":  "lead_snapshot",
+                      "fromSide":  "bottom",
+                      "toNode":  "offer_terms",
+                      "toSide":  "left"
+                  }
+              ]
+}
