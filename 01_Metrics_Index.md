@@ -2,6 +2,16 @@
 
 Only metrics with explicit logic are included here.
 
+## Layer Navigation
+
+- Previous layer: [[02_Table_Repository]], [[Schemas - Index]], [[Tables - Index]]
+- This layer: metric notes and hubs below
+- Next layer: [[04_Dashboard_Repository]]
+- Analysis consumers: [[03_Analysis_Repository]]
+- Model: [[Lineage - Four Layer Model]]
+
+Metric notes own calculation logic. Dashboard and analysis notes must link here instead of restating the same formula.
+
 ## Metric Node Hubs
 
 - [[Metrics - Funnel Outcomes]]
@@ -30,26 +40,21 @@ Only metrics with explicit logic are included here.
 | Booking Flag | `1` when `BOOKING_DETAILS.booking_time` is not null, else `0` | loan | `CFSPL_NBFC_DB.PROD.BOOKING_DETAILS` | [[Analysis - Marketing Campaign Query]] |
 | Delivery Flag | `1` when `BOOKING_DETAILS.delivery_date` is not null, else `0` | loan | `CFSPL_NBFC_DB.PROD.BOOKING_DETAILS` | [[Analysis - Marketing Campaign Query]] |
 | Form 1 Filled Flag | `MAX(LEAD_STAGE_TABLE.form_1_filled)` grouped by loan | loan | `CFSPL_NBFC_DB.PROD.LEAD_STAGE_TABLE` | [[Analysis - Marketing Campaign Query]] |
-| Lookalike Credit Approval Flag | Same as `Credit Approval Flag`, used in the marketing campaign lookalike extract. | loan | `CFSPL_NBFC_DB.PROD.APPLICATION_DETAILS.first_credit_approved_timestamp` | [[Analysis - Marketing Campaign Lookalikes]] |
-| Lookalike Disbursal Flag | Same as `Disbursal Flag`, used in the marketing campaign lookalike extract. | loan | `CFSPL_NBFC_DB.PROD.APPLICATION_DETAILS.disbursed_time` | [[Analysis - Marketing Campaign Lookalikes]] |
-| Lookalike Booking Flag | Same as `Booking Flag`, used in the marketing campaign lookalike extract. | loan | `CFSPL_NBFC_DB.PROD.BOOKING_DETAILS.booking_time` | [[Analysis - Marketing Campaign Lookalikes]] |
-| Lookalike Delivery Flag | Same as `Delivery Flag`, used in the marketing campaign lookalike extract. | loan | `CFSPL_NBFC_DB.PROD.BOOKING_DETAILS.delivery_date` | [[Analysis - Marketing Campaign Lookalikes]] |
-| Lookalike Form 1 Filled Flag | `MAX(lst.form_1_filled)` grouped by `ad.loan_id`, used in the marketing campaign lookalike extract. | loan | `CFSPL_NBFC_DB.PROD.LEAD_STAGE_TABLE.form_1_filled` | [[Analysis - Marketing Campaign Lookalikes]] |
-| F1-to-D Form 1 Filled Flag | From the F1-to-D base: use `cfd.form_1_filled` when `(cfd.FORM_1_FILLED = 1 and LEAD_FILL_SOURCE = 'saarthi')` or when `(cfd.FORM_1_FILLED = 1 and datediff(day, cfd.LEAD_CREATION_DATE, VISIT_TIME) between -1 and 9999 and LEAD_FILL_SOURCE = 'simpler')`. | lead/visit | `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Form 2 Filled Flag | Same source-aware logic as Form 1 Filled, using `cfd.form_2_filled`. | lead/visit | `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Form 3 Filled Flag | Same source-aware logic as Form 1 Filled, using `cfd.form_3_filled`. | lead/visit | `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Banking Required Flag | Uses `BR.banking_required` when banking required is true and the lead-fill-source/date-alignment condition is satisfied. | lead/visit | `STG_BANKING_REQUIRED`, `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Banking Attempted Flag | Uses `cfd.BANKING_INITIATED` when banking initiated is true and the lead-fill-source/date-alignment condition is satisfied. | lead/visit | `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Banking Success Flag | Uses `cfd.banking_success` when banking success is true and the lead-fill-source/date-alignment condition is satisfied. | lead/visit | `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Login Flag | `cfd.login_flag` when `cfd.LOGIN_FLAG = 1`. | lead/visit | `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Credit Assessed Flag | `1` when `cfd.CREDIT_ASSESSED_STATUS` is not null, else `0`. | lead/visit | `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Credit Approved Flag | `1` when `cfd.CREDIT_ASSESSED_STATUS = 'Credit Approved'`; when assessed but not approved, `0`. | lead/visit | `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D FCU Flag | `1` when `cfd.LATEST_FCU_APPROVED_TIMESTAMP` is not null and credit approved flag is `1`, else `0`. | lead/visit | `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D TNC Accepted Flag | `1` when `cfd.TNC_ACCEPTED_TIMESTAMP` is not null, else `0`. | lead/visit | `STG_CF_DETAILS`, `TNC_ACCEPTED_BASE` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Agreement Flag | `1` when `aggdtls.latest_agreement_date` is not null, else `0`. | lead/visit | `CFSPL_CF_C2C_DB.PRE_PROD.AGREEMENT_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Disbursal Flag | For UCC leads, `1` when `bd.DISBURSAL_FLAG = 1`; for non-`UCC1` leads, `1` when `cfd.disbursed_time` is not null; else `0`. | lead/visit | `STG_DISBURSAL_DATA`, `STG_CF_DETAILS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Token Flag | `1` when `token_time` is not null. | lead/visit | `STG_TOKEN_STATS`, `TOKEN_DETAILS_GS` | [[Reference Query - F1 to D ETL Base]] |
-| F1-to-D Asset Attached | `1` when `lba.asset_attach_timestamp` is not null, else `0`. | lead/visit | `LEAD_LEVEL_MOST_RELEVANT_BOOKING_AND_ASSET_VW_TEMP_2` | [[Reference Query - F1 to D ETL Base]] |
+| F1-to-D Form 1 Filled Flag | From the F1-to-D base: use `cfd.form_1_filled` when `(cfd.FORM_1_FILLED = 1 and LEAD_FILL_SOURCE = 'saarthi')` or when `(cfd.FORM_1_FILLED = 1 and datediff(day, cfd.LEAD_CREATION_DATE, VISIT_TIME) between -1 and 9999 and LEAD_FILL_SOURCE = 'simpler')`. | lead/visit | `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Form 2 Filled Flag | Same source-aware logic as Form 1 Filled, using `cfd.form_2_filled`. | lead/visit | `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Form 3 Filled Flag | Same source-aware logic as Form 1 Filled, using `cfd.form_3_filled`. | lead/visit | `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Banking Required Flag | Uses `BR.banking_required` when banking required is true and the lead-fill-source/date-alignment condition is satisfied. | lead/visit | `STG_BANKING_REQUIRED`, `STG_F1_ATTEMPTED_BASE`, `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Banking Attempted Flag | Uses `cfd.BANKING_INITIATED` when banking initiated is true and the lead-fill-source/date-alignment condition is satisfied. | lead/visit | `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Banking Success Flag | Uses `cfd.banking_success` when banking success is true and the lead-fill-source/date-alignment condition is satisfied. | lead/visit | `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Login Flag | `cfd.login_flag` when `cfd.LOGIN_FLAG = 1`. | lead/visit | `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Credit Assessed Flag | `1` when `cfd.CREDIT_ASSESSED_STATUS` is not null, else `0`. | lead/visit | `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Credit Approved Flag | `1` when `cfd.CREDIT_ASSESSED_STATUS = 'Credit Approved'`; when assessed but not approved, `0`. | lead/visit | `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D FCU Flag | `1` when `cfd.LATEST_FCU_APPROVED_TIMESTAMP` is not null and credit approved flag is `1`, else `0`. | lead/visit | `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D TNC Accepted Flag | `1` when `cfd.TNC_ACCEPTED_TIMESTAMP` is not null, else `0`. | lead/visit | `STG_CF_DETAILS`, `TNC_ACCEPTED_BASE` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Agreement Flag | `1` when `aggdtls.latest_agreement_date` is not null, else `0`. | lead/visit | `CFSPL_CF_C2C_DB.PRE_PROD.AGREEMENT_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Disbursal Flag | For UCC leads, `1` when `bd.DISBURSAL_FLAG = 1`; for non-`UCC1` leads, `1` when `cfd.disbursed_time` is not null; else `0`. | lead/visit | `STG_DISBURSAL_DATA`, `STG_CF_DETAILS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Token Flag | `1` when `token_time` is not null. | lead/visit | `STG_TOKEN_STATS`, `TOKEN_DETAILS_GS` | [[Evidence - F1 to D ETL Base]] |
+| F1-to-D Asset Attached | `1` when `lba.asset_attach_timestamp` is not null, else `0`. | lead/visit | `LEAD_LEVEL_MOST_RELEVANT_BOOKING_AND_ASSET_VW_TEMP_2` | [[Evidence - F1 to D ETL Base]] |
 | Agreement on Date Flag | For rolling calendar date, `1` when TEL event type is `AGREEMENT` and event date equals calendar date | booking/application/date | `TASK_EXECUTION_LOG`, `GS_SALES`, `BOOKING_DETAILS` | [[Analysis - Agreement Predictor]] |
 | Credit Approved on Date Flag | For rolling calendar date, `1` when TEL event type is `CREDIT_APPROVED` and event date equals calendar date | booking/application/date | `TASK_EXECUTION_LOG`, `GS_SALES`, `BOOKING_DETAILS` | [[Analysis - Agreement Predictor]] |
 | Active Tokens on Date | Rolling token cohort count based on token booking, expiry, and NRT cancellation state | booking/date | `CAPL_GS_DB.PROD.GS_SALES`, `CFSPL_NBFC_DB.PROD.BOOKING_DETAILS` | [[Analysis - Agreement Predictor]] |
@@ -63,6 +68,12 @@ Only metrics with explicit logic are included here.
 | WhatsApp Delivered Count | Distinct delivery recipients with a nonblank delivered value in the current calendar context. | recipient | `WhatsApp Delivery` | [[Dashboard - Whatsapp CRM Adoption]] |
 | WhatsApp Read Count | Distinct delivery recipients with a nonblank read value in the current calendar context. | recipient | `WhatsApp Delivery` | [[Dashboard - Whatsapp CRM Adoption]] |
 | AIRO Conversation Initiation Share | Current-stage distinct funnel users divided by the distinct users at Conversations initiated, retaining date and other non-stage filters. | anonymized user / funnel stage | `airo_new_funnel` | [[Dashboard - Whatsapp CRM Adoption]] |
+
+## Consolidated Context Aliases
+
+The marketing lookalike analysis consumes the canonical [[Metric - Credit Approval Flag]], [[Metric - Disbursal Flag]], [[Metric - Booking Flag]], [[Metric - Delivery Flag]], and [[Metric - Form 1 Filled Flag]]. The former `Lookalike ...` rows were duplicate contextual labels, not distinct metric definitions. Their unique context remains in [[Analysis - Marketing Campaign Lookalikes]].
+
+Confidence: Trusted. Consolidated on 2026-08-17 because source fields, logic, and grain match the canonical metrics.
 
 ## Partial Metrics
 

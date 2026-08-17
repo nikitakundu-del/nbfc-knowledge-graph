@@ -2,6 +2,8 @@
 
 Type: metric hub
 
+Layer: Metrics
+
 ## Metrics
 
 - [[Metric - F1 to D Form 1 Filled Flag]]
@@ -19,7 +21,10 @@ Type: metric hub
 - [[Metric - F1 to D Token Flag]]
 - [[Metric - F1 to D Asset Attached]]
 
-## Source
+## Canonical Lineage
 
-- [[Reference Query - F1 to D ETL Base]]
+[[Schema - CFSPL_CF_C2C_DB.PRE_PROD]] → metrics above → [[Dashboard - User To Form 1 Fill]].
 
+Evidence artifact: [[Evidence - F1 to D ETL Base]].
+
+Graph model: [[Lineage - Four Layer Model]].

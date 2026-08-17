@@ -2,6 +2,8 @@
 
 Type: semantic schema
 
+Layer: Base
+
 Confidence: Trusted for documented model structure.
 
 ## Core Semantic Tables And Relationships
@@ -14,6 +16,8 @@ Confidence: Trusted for documented model structure.
 
 ## Connected Knowledge
 
-- [[Dashboard - FCU Checks Automations]]
-- [[Metrics - Power BI Semantic Metrics]]
-- [[Analysis - FCU Employment Check Logic]]
+- Metrics: [[Metrics - Power BI Semantic Metrics]], [[01_Metrics_Index]]
+- Dashboard: [[Dashboard - FCU Checks Automations]]
+- Analysis: [[Analysis - FCU Employment Check Logic]]
+
+Graph model: [[Lineage - Four Layer Model]].

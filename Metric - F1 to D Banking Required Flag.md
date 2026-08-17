@@ -20,5 +20,5 @@ Uses `BR.banking_required` when `BR.BANKING_REQUIRED = 1` and the same source-aw
 
 ## Used By
 
-- [[Reference Query - F1 to D ETL Base]]
+- [[Evidence - F1 to D ETL Base]]
 

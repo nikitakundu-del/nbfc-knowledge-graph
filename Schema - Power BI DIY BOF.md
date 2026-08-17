@@ -2,6 +2,8 @@
 
 Type: semantic schema
 
+Layer: Base
+
 Confidence: Trusted for documented model structure.
 
 ## Core Semantic Tables
@@ -23,6 +25,8 @@ Source traceability: Snowflake worksheet execution `01c64b6e-0002-73d8-0008-3056
 
 ## Connected Knowledge
 
-- [[Dashboard - DIY BOF]]
-- [[Metrics - Power BI Semantic Metrics]]
-- [[Analysis - BOF GA Funnel Semantic Model]]
+- Metrics: [[Metrics - Power BI Semantic Metrics]], [[01_Metrics_Index]]
+- Dashboard: [[Dashboard - DIY BOF]]
+- Analysis: [[Analysis - BOF GA Funnel Semantic Model]]
+
+Graph model: [[Lineage - Four Layer Model]].

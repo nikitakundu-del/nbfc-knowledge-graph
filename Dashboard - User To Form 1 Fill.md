@@ -2,6 +2,8 @@
 
 Confidence: Trusted for extracted calculated fields and visible custom SQL sources.
 
+Layer: Dashboard
+
 ## Tool
 
 Tableau packaged workbook (`.twbx`).
@@ -15,7 +17,7 @@ Tableau packaged workbook (`.twbx`).
 
 ## Reference Base Query
 
-- [[Reference Query - F1 to D ETL Base]] is the source reference query used for the F1-to-D dashboard base.
+- [[Evidence - F1 to D ETL Base]] is the source reference query used for the F1-to-D dashboard base.
 
 ## Workbook Filters Observed
 
@@ -50,3 +52,12 @@ Metric hub: [[Metrics - Tableau Dashboard Rates]]
 ## Notes
 
 The workbook also includes categorization logic for CF entry points and entry point labels. Those are potentially valuable dimensions, but should be promoted after reviewing the full mapping list.
+
+## Four-Layer Lineage
+
+- Base: [[Schema - CFSPL_CF_C2C_DB.PROD]], [[Schema - CFSPL_CF_C2C_DB.PRE_PROD]], [[Schema - CFSPL_NBFC_DB.PROD_MONGO_CF_CREDIT]], [[Schema - CSPL_MKT_DB]]
+- Metrics: [[Metrics - Tableau Dashboard Rates]], [[Metrics - F1 to D Base Flags]], [[01_Metrics_Index]]
+- Dashboard: this note
+- Analysis: [[Analysis - U2FF Query ETL]]
+
+Graph model: [[Lineage - Four Layer Model]].
