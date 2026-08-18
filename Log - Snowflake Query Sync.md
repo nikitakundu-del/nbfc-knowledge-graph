@@ -13,6 +13,7 @@ Append-only operational log for the conservative Snowflake-to-Obsidian knowledge
 | 2026-08-17T06:38:52Z | D1 baseline (bounded continuation) | Read-only Snowflake history slice reviewed for 2026-08-10T09:15:43Z to 2026-08-11T09:15:43Z; three Power BI model statistics and tracked measures read | 95 | 1 Trusted canonical enrichment; sensitive WhatsApp logic, BI wrappers, duplicates, and broad extracts excluded | updated | Analysis - BOF GA Funnel Semantic Model; Schema - Power BI DIY BOF | Partial baseline checkpoint saved; baseline remains open | 59 distinct Snowflake hashes; only the trusted lead-journey construction was added. Tracked Power BI model counts and measures were unchanged. |
 
 | 2026-08-17T08:51:53Z | D1 baseline (bounded continuation) | Read-only Snowflake history slice reviewed for 2026-08-09T09:15:43Z to 2026-08-10T09:15:43Z; three Power BI model fingerprints rechecked | 47 | 0 Trusted; all readable candidates contained sensitive WhatsApp identifiers/message logic or duplicate BI-generated logic | no eligible change | none | Partial baseline checkpoint saved; baseline remains open | 22 distinct Snowflake hashes. Power BI table, measure, and relationship counts were unchanged from the earlier run. |
+| 2026-08-18T08:31:26Z | D1 baseline (bounded continuation) | Read-only Snowflake history slice reviewed for 2026-08-08T09:15:43Z to 2026-08-09T09:15:43Z; three Power BI model table, measure-name, and relationship inventories rechecked | 0 | 0 Trusted; no matching Snowflake queries and no Power BI inventory change | no eligible change | none | Partial baseline checkpoint saved; baseline remains open | Historical baseline remains incomplete. GitHub main updated at `219b501`; Drive upload deferred pending explicit confirmation for internal file transmission. |
 
 ## Google Drive Mirror Activity
 
@@ -23,3 +24,10 @@ Append-only operational log for the conservative Snowflake-to-Obsidian knowledge
 | 2026-08-14T08:30:46Z | Deferred — safe version upload unavailable | 0 | Daily activity log and hidden checkpoint changed locally; no knowledge notes required mirroring. | Drive did not expose a safe file-upload control for version replacement; retry next run. No sharing settings changed. |
 | 2026-08-17T06:38:52Z | Deferred — authenticated browser unavailable | 0 | Two trusted knowledge notes, daily activity log, and hidden checkpoint changed locally; retry all four files next run. | Drive was unavailable in this run. No sharing settings changed. |
 | 2026-08-17T08:51:53Z | Deferred — authenticated browser unavailable | 0 | Prior trusted-note backlog plus current daily log and checkpoint updates remain queued as four unique files. | Drive remained unavailable. No sharing settings changed. |
+| 2026-08-18T08:31:26Z | Deferred — confirmation required | 0 | Four-layer lineage cleanup, prior trusted-note backlog, daily log, and checkpoint remain queued as 25 unique files. | Authenticated destination is available, but explicit action-time confirmation for transmitting internal analytics notes has not been received. No sharing settings changed. |
+
+## GitHub Mirror Activity
+
+| Run timestamp (UTC) | GitHub mirror status | Files | Commit | Notes / limitation |
+|---|---|---:|---|---|
+| 2026-08-18T08:31:26Z | Updated and verified | 49 | `219b501` | Four-layer lineage cleanup is on private `main`; sanitized evidence preserves navigation without raw SQL/DAX, hidden state, PII, credentials, or extracts. |
