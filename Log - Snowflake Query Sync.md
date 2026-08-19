@@ -33,4 +33,4 @@ Append-only operational log for the conservative Snowflake-to-Obsidian knowledge
 | Run timestamp (UTC) | GitHub mirror status | Files | Commit | Notes / limitation |
 |---|---|---:|---|---|
 | 2026-08-18T08:31:26Z | Updated and verified | 49 | `219b501` | Four-layer lineage cleanup is on private `main`; sanitized evidence preserves navigation without raw SQL/DAX, hidden state, PII, credentials, or extracts. |
-| 2026-08-19T09:03:02Z | Log-only update pending | 1 | pending | No eligible knowledge-content change; only the sanitized daily operational log requires mirroring. |
+| 2026-08-19T09:03:02Z | Updated and verified | 1 | `9a3fba7` | No eligible knowledge-content change; the sanitized daily operational log was mirrored successfully. |
