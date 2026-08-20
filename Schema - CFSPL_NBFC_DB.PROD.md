@@ -14,6 +14,7 @@ Core NBFC production DWH/application schema used for lead, application, booking,
 - [[Table - CFSPL_NBFC_DB.PROD.LEAD_STAGE_TABLE]]
 - [[Table - CFSPL_NBFC_DB.PROD.ASSET_DETAILS]]
 - [[Table - CFSPL_NBFC_DB.PROD.TASK_EXECUTION_TIME_PROD_SAARATHI]]
+- [[Table - CFSPL_NBFC_DB.PROD.TASK_EXECUTION_LOG]]
 
 ## Used By
 
@@ -22,4 +23,4 @@ Core NBFC production DWH/application schema used for lead, application, booking,
 - [[Analysis - Lead Stage Snapshot]]
 - [[Analysis - Agreement Predictor]]
 - [[Analysis - Task TAT and Queue]]
-
+- [[Analysis - BOF Task Actor Model]]

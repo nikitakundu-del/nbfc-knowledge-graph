@@ -26,6 +26,8 @@ This is the canonical base-layer hub for databases, schemas, tables/views, field
 | `CFSPL_NBFC_DB.PROD.LEAD_STAGE_TABLE` | Form 1 filled flag and stage-level funnel status. | [[Analysis - Marketing Campaign Query]] |
 | `CFSPL_NBFC_DB.PROD.ASSET_DETAILS` | Asset/car details in lead stage snapshot and enrichment work. | [[Analysis - Lead Stage Snapshot]] |
 | `CFSPL_NBFC_DB.PROD.TASK_EXECUTION_TIME_PROD_SAARATHI` | Workflow timestamps and funnel task timing. | [[Analysis - Lead Stage Snapshot]], [[Analysis - Task TAT and Queue]] |
+| `CFSPL_NBFC_DB.PROD.TASK_EXECUTION_LOG` | Task-execution rows for BOF DIY leads, including status, actor bucket, and task activity time. | [[Schema - Power BI DIY BOF]], [[Analysis - BOF Task Actor Model]] |
+| `CFSPL_NBFC_DB.GA4_LOANS24.EVENT` | BOF proxy-event cohort and journey source, linked to task execution by lead identifier. | [[Schema - Power BI DIY BOF]], [[Analysis - BOF Task Actor Model]] |
 | `CFSPL_NBFC_DB.PROD.BANKING_DETAILS_PROD_SAARATHI` | Banking detail enrichment. | [[Analysis - NBFC DWH Enrichment Handoff]] |
 
 ## Raw/Operational Source Tables

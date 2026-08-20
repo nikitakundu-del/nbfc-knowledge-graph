@@ -9,6 +9,7 @@ Navigation: [[Lineage - Four Layer Model]] → [[02_Table_Repository]] → [[01_
 ## Schema Nodes
 
 - [[Schema - CFSPL_NBFC_DB.PROD]]
+- [[Schema - CFSPL_NBFC_DB.GA4_LOANS24]]
 - [[Schema - CFSPL_CF_C2C_DB.PROD]]
 - [[Schema - CFSPL_CF_C2C_DB.PRE_PROD]]
 - [[Schema - CFSPL_NBFC_DB.PROD_MONGO_FIN_SAARATHI_BFF_DB]]
@@ -26,6 +27,8 @@ Navigation: [[Lineage - Four Layer Model]] → [[02_Table_Repository]] → [[01_
 - [[Table - CFSPL_NBFC_DB.PROD.LEAD_STAGE_TABLE]]
 - [[Table - CFSPL_NBFC_DB.PROD.ASSET_DETAILS]]
 - [[Table - CFSPL_NBFC_DB.PROD.TASK_EXECUTION_TIME_PROD_SAARATHI]]
+- [[Table - CFSPL_NBFC_DB.PROD.TASK_EXECUTION_LOG]]
+- [[Table - CFSPL_NBFC_DB.GA4_LOANS24.EVENT]]
 - [[Table - CFSPL_CF_C2C_DB.PROD.F1_TO_D_DASHBOARD_VW]]
 - [[Table - CFSPL_NBFC_DB.PROD_MONGO_CF_CREDIT.CUSTOMER_CREDIT_VARIABLES]]
 - [[Table - CFSPL_NBFC_DB.PROD_MONGO_FIN_SAARATHI_BFF_DB.TASK_EXECUTION_LOG]]

@@ -12,6 +12,8 @@ Layer: Dashboard
 - Friction fact: `BOF_DIY_FRICTION_FACT`.
 - First-step fact: `BOF_DIY_FIRST_STEP_FACT`, one row per lead and started stage.
 - Application fact: `APPLICATION_DETAILS`, loaded from Snowflake and limited to disbursal time on or after 15-Jun-2026.
+- Task actor fact: `BOF_DIY_TASK_ACTOR_FACT`, at task-execution-row grain for BOF DIY leads.
+- BOF-scoped task log: `TASK_EXECUTION_LOG`, with an inactive task-activity-date relationship to Calendar.
 
 ## Trusted Measures
 
@@ -21,16 +23,18 @@ Layer: Dashboard
 - **Journey Completion %**: uses completion-after-reach in step context and stage-completion-after-start in stage context.
 - **Friction Events**: row count of the friction fact.
 - **Disbursed Applications**: distinct application loan ids in the model's disbursed-date scope.
+- Task reporting consumes the canonical definitions in [[Metrics - BOF Task Actor]], including row, lead/application, completion, actor-share, and task-date variants.
 
 ## Source Traceability
 
 - Semantic-model metadata and DAX read through the Power BI XMLA endpoint on 2026-08-12.
+- New task/actor tables, relationships, partitions, and exact measure definitions read through the Power BI XMLA endpoint on 2026-08-20.
 
 ## Connected Knowledge
 
 - Base/semantic schema: [[Schema - Power BI DIY BOF]]
-- Metrics: [[Metrics - Power BI Semantic Metrics]] and [[01_Metrics_Index]]
+- Metrics: [[Metrics - BOF Task Actor]], [[Metrics - Power BI Semantic Metrics]] and [[01_Metrics_Index]]
 - Dashboard: this note
-- Analysis: [[Analysis - BOF GA Funnel Semantic Model]]
+- Analysis: [[Analysis - BOF GA Funnel Semantic Model]], [[Analysis - BOF Task Actor Model]]
 
 Graph model: [[Lineage - Four Layer Model]].

@@ -17,6 +17,8 @@ Metric notes own calculation logic. Dashboard and analysis notes must link here 
 - [[Metrics - Funnel Outcomes]]
 - [[Metrics - F1 to D Base Flags]]
 - [[Metrics - Tableau Dashboard Rates]]
+- [[Metrics - Power BI Semantic Metrics]]
+- [[Metrics - BOF Task Actor]]
 
 ## Trusted Metrics
 
@@ -62,12 +64,19 @@ Metric notes own calculation logic. Dashboard and analysis notes must link here 
 | BOF Overall Completed Leads | Distinct cohort leads at step order 11 with completed flag 1 (Agreement Signing completion). | lead | `BOF_DIY_STEP_FACT` | [[Dashboard - DIY BOF]] |
 | BOF Overall Completion % | Overall completed leads divided by total cohort leads; blank for a zero denominator. | lead | `BOF_DIY_STEP_FACT` | [[Dashboard - DIY BOF]] |
 | BOF Friction Events | Row count of tracked friction/rework event rows. | friction event | `BOF_DIY_FRICTION_FACT` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Task Execution Rows]] | Count of BOF task-actor fact rows; alternate task-date context activates the inactive task-activity-date relationship. | task execution row | `BOF_DIY_TASK_ACTOR_FACT` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Task Execution Leads]] | Distinct BOF lead identifiers represented in the task-actor fact; alternate task-date context is explicit. | lead | `BOF_DIY_TASK_ACTOR_FACT` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Completed Task Execution Rows]] | Task-execution rows whose task status is Completed. | task execution row | `BOF_DIY_TASK_ACTOR_FACT` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Task Actor Bucket Lead Share]] | Distinct task leads in the current actor bucket divided by distinct task leads with actor-bucket filters removed; bucket shares may overlap. | lead / actor bucket | `BOF_DIY_TASK_ACTOR_FACT` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Task Log Rows]] | Count of BOF-scoped source task-log rows; alternate task-date context activates the inactive task-activity-date relationship. | task-log row | `TASK_EXECUTION_LOG` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Task Log Application IDs]] | Distinct application identifiers represented in the BOF-scoped task log; alternate task-date context is explicit. | application | `TASK_EXECUTION_LOG` | [[Dashboard - DIY BOF]] |
+| [[Metric - BOF Completed Task Log Rows]] | BOF-scoped task-log rows whose status is Completed. | task-log row | `TASK_EXECUTION_LOG` | [[Dashboard - DIY BOF]] |
 | FCU Auto-Verified % | At loan-and-page grain, auto-approved modules divided by all approved or auto-approved modules, ignoring any existing status filter. | loan/page module | `datasource` | [[Dashboard - FCU Checks Automations]] |
 | FCU API Success Rate | API request rows with exact success status divided by all API request rows in current context. | API request | `apiData` | [[Dashboard - FCU Checks Automations]] |
 | WhatsApp Sent Count | Distinct delivery recipients with a nonblank sent value in the current calendar context. | recipient | `WhatsApp Delivery` | [[Dashboard - Whatsapp CRM Adoption]] |
 | WhatsApp Delivered Count | Distinct delivery recipients with a nonblank delivered value in the current calendar context. | recipient | `WhatsApp Delivery` | [[Dashboard - Whatsapp CRM Adoption]] |
 | WhatsApp Read Count | Distinct delivery recipients with a nonblank read value in the current calendar context. | recipient | `WhatsApp Delivery` | [[Dashboard - Whatsapp CRM Adoption]] |
-| AIRO Conversation Initiation Share | Current-stage distinct funnel users divided by the distinct users at Conversations initiated, retaining date and other non-stage filters. | anonymized user / funnel stage | `airo_new_funnel` | [[Dashboard - Whatsapp CRM Adoption]] |
+| [[Metric - AIRO Conversation Initiation Share]] | Current-stage distinct funnel users divided by the distinct users at Conversations initiated, retaining date and other non-stage filters. | anonymized user / funnel stage | `airo_new_funnel` | [[Dashboard - Whatsapp CRM Adoption]] |
 
 ## Consolidated Context Aliases
 

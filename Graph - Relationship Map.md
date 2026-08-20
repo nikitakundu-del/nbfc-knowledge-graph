@@ -11,8 +11,10 @@ Type: graph map
 ## Trusted Cross-Layer Paths
 
 - [[Schema - Power BI DIY BOF]] → [[Metrics - Power BI Semantic Metrics]] → [[Dashboard - DIY BOF]] → [[Analysis - BOF GA Funnel Semantic Model]].
+- [[Table - CFSPL_NBFC_DB.PROD.TASK_EXECUTION_LOG]] and [[Table - CFSPL_NBFC_DB.GA4_LOANS24.EVENT]] → [[Schema - Power BI DIY BOF]] → [[Metrics - BOF Task Actor]] → [[Dashboard - DIY BOF]] → [[Analysis - BOF Task Actor Model]].
 - [[Schema - Power BI FCU Checks Automations]] → [[Metrics - Power BI Semantic Metrics]] → [[Dashboard - FCU Checks Automations]] → [[Analysis - FCU Employment Check Logic]].
 - [[Schema - Power BI Whatsapp CRM Adoption]] → [[Metrics - Power BI Semantic Metrics]] → [[Dashboard - Whatsapp CRM Adoption]] → [[Analysis - Whatsapp CRM Adoption Semantic Model]].
+- [[Schema - Power BI Whatsapp CRM Adoption]] → [[Metric - AIRO Conversation Initiation Share]] → [[Dashboard - Whatsapp CRM Adoption]] → [[Analysis - Whatsapp CRM Adoption Semantic Model]].
 - [[Schema - CFSPL_CF_C2C_DB.PROD]] → [[Metrics - Tableau Dashboard Rates]] → [[Dashboard - User To Form 1 Fill]] → [[Analysis - U2FF Query ETL]].
 - [[Schema - CFSPL_CF_C2C_DB.PRE_PROD]] → [[Metrics - F1 to D Base Flags]] → [[Dashboard - User To Form 1 Fill]].
 - [[Schema - CFSPL_NBFC_DB.PROD]] → [[Metrics - Funnel Outcomes]] → [[Analysis - Marketing Campaign Query]] and [[Analysis - Marketing Campaign Lookalikes]].
@@ -27,6 +29,7 @@ Type: graph map
 ## Schema Hubs
 
 - [[Schema - CFSPL_NBFC_DB.PROD]]
+- [[Schema - CFSPL_NBFC_DB.GA4_LOANS24]]
 - [[Schema - CFSPL_CF_C2C_DB.PROD]]
 - [[Schema - CFSPL_CF_C2C_DB.PRE_PROD]]
 - [[Schema - CAPL_GS_DB.PROD]]
@@ -42,3 +45,4 @@ Type: graph map
 - [[Metrics - F1 to D Base Flags]]
 - [[Metrics - Tableau Dashboard Rates]]
 - [[Metrics - Power BI Semantic Metrics]]
+- [[Metrics - BOF Task Actor]]

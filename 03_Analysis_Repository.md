@@ -25,4 +25,5 @@ Analysis notes own recurring reporting and one-time analytical questions, scope,
 | [[Analysis - SMS Risk and Feature Stamping]] | SMS risk bucket and feature stamping timing. | Partial | Data sources are explicit; business/privacy review recommended before broad graph publishing. |
 | [[Analysis - FCU Employment Check Logic]] | Latest FCU employment-check extraction and API/review outcome classification. | Trusted | Worksheet SQL explicitly exposes tables, join keys, flattening, filters, grain, and category precedence. |
 | [[Analysis - BOF GA Funnel Semantic Model]] | BOF journey, friction, and application-outcome semantic model. | Trusted | Model structure and core DAX measures are explicitly available. |
+| [[Analysis - BOF Task Actor Model]] | BOF task volume, completion, actor-bucket, and task-date reporting. | Trusted | Model partitions, relationships, grain, and exact measures are explicit. |
 | [[Analysis - Whatsapp CRM Adoption Semantic Model]] | WhatsApp delivery and AIRO conversation-funnel semantic model. | Trusted | Model relationships and core DAX measures are explicitly available. |
